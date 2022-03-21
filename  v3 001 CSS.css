@@ -1,4 +1,5 @@
-// v3 001 CSS
+/* v3 003 CSS*/
+
 .content p:first-of-type {
     float: right;
     padding-left: 5em;
@@ -56,6 +57,13 @@ p {
     display: block;
 }
 
+.Message__message-content .Media {
+    width: 28rem !important;
+    max-height: 24rem !important;
+    /*border: 5px solid red;*/
+    border-radius: 1rem !important
+}
+
 .button {
     border-color: #2345c7;
     border-width: 2px;
@@ -82,6 +90,14 @@ p {
     color: white !important;
 }
 
+.InputButtonsMultiple .input-button {
+    border-radius: 1rem;
+}
+
+.InputButtonsMultiple .is-selected img {
+    border-radius: 0rem;
+}
+
 .input-send-button {
     background-color: #003049 !important;
     padding: 1rem 6rem !important;
@@ -99,14 +115,27 @@ p {
 
 .is-author-user .MessageBubbleText.content {
     padding: 1rem 2rem;
-    margin: 0rem 0rem;
-    color: #1789FC !important;
-    font-weight: 600 !important;
-    font-size: 1.15rem: !important;
-    background-color: rgba(255, 255, 255, .6)!important;
+    margin: 0rem rem 0rem;
+    color: #1789FC;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, .6);
+    animation: slideInFromLeft .7s cubic-bezier(.22, -0.01, .38, 1);
 }
 
-.MessageDate {
-    color: #b7b7b7 !important;
-    display: none;
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.message-left {
+    display: none !important;
+}
+
+.message-right {
+    display: none !important;
 }
