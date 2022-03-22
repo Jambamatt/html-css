@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function replacePenultimate(str, toReplace, ReplaceWith) {
+            let n = str.lastIndexOf(toReplace);
+            var strA = str.slice(0, n, ReplaceWith);
+            var strB = str.slice(n + toReplace.length, str.length);
+            var strNew = strA + ReplaceWith + strB;
+            return (strNew);
+        }
+        var myString = "one,two,three,four";
+
+        console.log(replacePenultimate(myString, ",", " and "));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
