@@ -1,0 +1,155 @@
+/* v3 003.1 CSS*/
+
+.content p:first-of-type {
+    float: right;
+    padding-left: 5em;
+    font-size: xx-small;
+    color: silver;
+}
+
+body {
+    line-height: 1.5rem !important;
+    background-color: #eee;
+}
+
+p {
+    margin-bottom: .2rem !important;
+}
+
+.Header__Row {
+    /*background-color:orange!important;*/
+    border: 3rem normal !important;
+    min-height: 4em !important;
+}
+
+.is-hidden-tablet {
+    /*display:none;*/
+}
+
+.Header {
+    min-height: 7rem !important;
+    /*background-color:yellow !important;*/
+    background-color: rgba(255, 255, 255, .9);
+    padding: .7rem 1.3rem;
+    min-height: 4rem !important;
+    /*height: 100px !important;*/
+    animation: heightAnim .25s ease;
+}
+
+@keyframes heightAnim {
+    from {
+        height: 150px;
+    }
+    to {
+        height: 100px;
+    }
+}
+
+.Header--isSticky {
+    display: none;
+    /*    background-color: lime !important;*/
+}
+
+.Header__Title {
+    /*background-color:lime !important;*/
+    font-size: 1.4rem
+}
+
+.Header__Subtitle {
+    font-size: 1rem;
+    margin-top: .2rem;
+}
+
+.Header__Logo .image img {
+    width: auto;
+    height: 54px;
+    min-width: 35px;
+    display: block;
+}
+
+.Message__message-content .Media {
+    max-width: 24rem !important;
+    max-height: 12rem !important;
+    /*border: 5px solid red;*/
+    border-radius: 1rem !important
+}
+
+.button {
+    border-color: #2345c7;
+    border-width: 2px;
+    font-weight: 600 !important;
+    font-size: 1.15rem !important;
+}
+
+.Message__message-content .is-author-bot {
+    padding: 1.5rem;
+    background-color: white !important;
+    border: #EEF0EB 2.5px solid;
+    box-shadow: 2px 3px 0px rgba(0, 0, 0, 0.05);
+}
+
+.input-button.is-multiple {
+    background-color: white !important;
+    border: #1789FC 2.5px solid !important;
+    color: #1789FC !important;
+}
+
+.input-button.is-multiple.is-selected {
+    background-color: #1789FC !important;
+    border: #1789FC 2.5px solid !important;
+    color: white !important;
+}
+
+.InputButtonsMultiple .input-button {
+    border-radius: 1rem !important;
+}
+
+.input-send-button {
+    background-color: #003049 !important;
+    padding: 1rem 6rem !important;
+    border-radius: 2rem;
+    border: #003049 2.5px solid !important;
+}
+
+.input-send-button:disabled {
+    background-color: #b7b7b7 !important;
+    opacity: 1;
+    padding: 1rem 6rem !important;
+    border-radius: 2rem;
+    border: #b7b7b7 2.5px solid !important;
+}
+
+.is-author-user .MessageBubbleText.content {
+    padding: 1rem 2rem;
+    margin: 0rem rem 0rem;
+    color: #1789FC;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, .6);
+    animation: slideInFromLeft .7s cubic-bezier(.22, -0.01, .38, 1);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+/*Removes a gap to the left of the back button*/
+
+.jwzvVT {
+    width: 0px !important;
+    margin-right: 0px !important;
+}
+
+.message-left {
+    display: none !important;
+}
+
+.message-right {
+    display: none !important;
+}
